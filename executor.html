@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote Control</title>
+</head>
+<body>
+    <div class="notify">
+        <input type="text" placeholder="Text📝" id="notification-text">
+        <input type="text" placeholder="Image URL🖼️" id="notification-image">
+        <button id="notifyVictim()">Send Notification</button>
+    </div>
+    <script>
+        let notificationText = document.querySelector("#notification-text")
+        let notificationImage = document.querySelector('#notification-image')
+        let request = new XMLHttpRequest;
+        function tortureVictim() {
+            request.send("GET", "")
+        }
+    </script>
+</body>
+</html>
